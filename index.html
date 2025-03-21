@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StyleEase - Clothing Brand</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #a58ea7;
+            color: rgb(249, 245, 245);
+        }
+        .navbar {
+            background-color: #65054f;
+        }
+        .hero {
+            background: url('https://wallpaperaccess.com/full/2489626.jpg') no-repeat center center/cover;
+            height: 80vh;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+        }
+        .hero::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 5, 30, 0.5);
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+        }
+        .hero p {
+            font-size: 1.2rem;
+        }
+        .card {
+            background-color: rgba(31, 5, 30, 0.5);
+            border: none;
+            color: rgb(38, 35, 35);
+        }
+        .footer {
+            background-color: #65054f;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="https://i.pinimg.com/originals/f3/a6/e5/f3a6e57461a25a3e3031349e8a217f51.jpg"
+                height="50px" width="75px">StyleEase</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#collection">Collection</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="hero-content text-center">
+            <h1>Elevate Your Style</h1>
+            <p>Discover our latest collection of premium fashion wear.</p>
+            <a href="#collection" class="btn btn-outline-light">Shop Now</a>
+        </div>
+    </div>
+
+    <section id="collection" class="container py-5">
+        <h2 class="text-center">Our Collection</h2>
+        <div class="row text-center">
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" class="card-img-top" alt="Shirt">
+                    <h4>Casual Shirts</h4>
+                    <p>Perfect blend of comfort and style.</p>
+                    <button class="btn btn-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://tandywear.com/cdn/shop/articles/shutterstock_1576962760_1200x1200.jpg?v=1690563949" class="card-img-top" alt="Jeans">
+                    <h4>Denim Collection</h4>
+                    <p>Premium quality denim for all occasions.</p>
+                    <button class="btn btn-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://th.bing.com/th/id/OIP.Qwb_76zLcIyPp9FfO0uNUgHaE5?w=789&h=522&rs=1&pid=ImgDetMain" class="card-img-top" alt="Jacket">
+                    <h4>Trendy Jackets</h4>
+                    <p>Stay warm and stylish this season.</p>
+                    <button class="btn btn-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://thumbs.dreamstime.com/b/row-shirts-hanging-clothes-rack-next-to-potted-plant-wooden-hanger-three-different-colored-shirts-hanging-273559566.jpg" class="card-img-top" alt="Jacket">
+                    <h4>Trendy T-shirts</h4>
+                    <p>Elegent and look classy.</p>
+                    <button class="btn btn-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://img.freepik.com/premium-photo/rack-clothes-hanging-rail_1021856-29510.jpg" class="card-img-top" alt="Jacket">
+                    <h4>Maxi Dresses</h4>
+                    <p>Feel the comfort.</p>
+                    <button class="btn btn-light">Shop Now</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card p-3">
+                    <img src="https://th.bing.com/th/id/OIP.LCFI5e6CyZu62Od6i6Mn3gHaE7?w=626&h=417&rs=1&pid=ImgDetMain" class="card-img-top" alt="Jacket">
+                    <h4>Hijabs</h4>
+                    <p>Style your way.</p>
+                    <button class="btn btn-light">Shop Now</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="about" class="container py-5 text-center">
+        <h2>About Us</h2>
+        <p>At StyleEase, we believe that clothing isn’t just about what you wear—it’s a 
+            reflection of who you are and the world you want to create. Our journey began with 
+            a simple yet powerful idea: fashion should be as unique as the people who wear it. 
+            Our brand set out to offer more than just stylish pieces. We wanted to create a movement
+            where fashion meets sustainability, comfort, and individuality.Born from a passion for creativity 
+            and quality, StyleEase is committed to crafting timeless, versatile designs that tell a story. 
+            Each collection is inspired by our founder’s love for [inspiration—could be nature, culture, 
+            art, etc.], and each garment is made with the finest materials to ensure it lasts—not only 
+            in terms of durability but in style, too.As a brand, we believe that true beauty lies in
+             imperfection, and that’s why every piece is designed with attention to detail, celebrating the natural textures and colors of our fabrics. Our clothing is for people who value authenticity, inclusivity, and the freedom to express themselves.   
+            But we don’t just make clothes. We make a promise—to tread lightly on the earth while creating 
+            pieces that empower people. Through ethical production methods and sustainable materials, we 
+            ensure that every item is made with care for both the people who wear it and the planet we all 
+            share.
+            <p><h4>Welcome to StyleEase. Wear your story.</h4></p>
+        </p>
+    </section>
+
+    <section id="contact" class="container py-5 text-center">
+        <h2>Contact Us</h2>
+        <form class="w-50 mx-auto">
+            <div class="mb-3">
+                <label class="form-label"></label>
+                <input type="text" class="form-control" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label class="form-label"></label>
+                <input type="email" class="form-control" placeholder="Your Email">
+            </div>
+            <div class="mb-3">
+                <label class="form-label"></label>
+                <textarea class="form-control" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-light">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="footer text-center text-white">
+        <p>&copy; 2025 StyleEase. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
